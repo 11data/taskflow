@@ -7,7 +7,7 @@ import json
 import sys
 from datetime import datetime
 
-API_URL = "http://localhost:8080"
+API_URL = "http://localhost:8090"
 
 
 def list_tasks(assignee=None, status=None):

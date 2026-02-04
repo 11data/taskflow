@@ -6,8 +6,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base
 
-# Database connection
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://clawd:@localhost:5432/taskflow")
+# Database connection - uses peer authentication (Unix socket)
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql:///taskflow")
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
