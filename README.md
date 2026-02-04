@@ -2,9 +2,10 @@
 
 Postgres-based task management with Kanban UI for the agent team.
 
-**🌐 Live:** http://guenther.tail360cf1.ts.net:8090  
-**📖 API Docs:** http://guenther.tail360cf1.ts.net:8090/docs  
-**📊 Dashboard:** http://guenther.tail360cf1.ts.net:3030
+**🌐 Live:** http://100.119.145.16:8090 (Tailscale IP)  
+**📖 API Docs:** http://100.119.145.16:8090/docs  
+**📊 Dashboard:** http://100.119.145.16:3030  
+*Hostname (requires MagicDNS): http://guenther.tail360cf1.ts.net:8090*
 
 ## Architecture
 
@@ -45,7 +46,7 @@ http://localhost:8080
 
 ## API Endpoints
 
-Base URL: `http://guenther.tail360cf1.ts.net:8090`
+Base URL: `http://100.119.145.16:8090` (Tailscale IP)
 
 - `GET /tasks` - List all tasks
 - `POST /tasks` - Create task

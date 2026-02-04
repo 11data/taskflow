@@ -3,9 +3,10 @@
 **Created:** 2026-02-04  
 **Status:** ✅ DEPLOYED ON TAILSCALE  
 **GitHub:** https://github.com/11data/taskflow  
-**API:** http://guenther.tail360cf1.ts.net:8090  
-**Docs:** http://guenther.tail360cf1.ts.net:8090/docs  
-**Dashboard:** http://guenther.tail360cf1.ts.net:3030  
+**API:** http://100.119.145.16:8090 (Tailscale IP)  
+**Docs:** http://100.119.145.16:8090/docs  
+**Dashboard:** http://100.119.145.16:3030  
+*Alt hostname (requires MagicDNS): guenther.tail360cf1.ts.net:8090*  
 
 ---
 
@@ -71,7 +72,7 @@ taskflow stats
 ```python
 import requests
 
-API_URL = "http://guenther.tail360cf1.ts.net:8090"
+API_URL = "http://100.119.145.16:8090"  # Tailscale IP
 
 # Create task
 data = {
