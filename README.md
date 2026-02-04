@@ -2,6 +2,10 @@
 
 Postgres-based task management with Kanban UI for the agent team.
 
+**🌐 Live:** http://guenther.tail360cf1.ts.net:8090  
+**📖 API Docs:** http://guenther.tail360cf1.ts.net:8090/docs  
+**📊 Dashboard:** http://guenther.tail360cf1.ts.net:3030
+
 ## Architecture
 
 **Backend:**
@@ -41,11 +45,14 @@ http://localhost:8080
 
 ## API Endpoints
 
+Base URL: `http://guenther.tail360cf1.ts.net:8090`
+
 - `GET /tasks` - List all tasks
 - `POST /tasks` - Create task
 - `PATCH /tasks/{id}` - Update task
 - `DELETE /tasks/{id}` - Delete task
 - `GET /tasks/by-assignee/{assignee}` - Tasks for specific agent
+- `GET /stats` - Task statistics
 
 ## Database Schema
 
